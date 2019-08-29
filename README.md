@@ -1,5 +1,5 @@
 # News-Scraper
-All the News That's Fit to Scrape (from theverge.com/tech)
+All the News That's Fit to Scrape ([The Verge](https://www.theverge.com/tech))
 
 * Web scraper built using:
     * Javascript
