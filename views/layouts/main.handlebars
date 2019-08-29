@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Federo|Fredericka+the+Great|Frijole|Kelly+Slab|Lacquer|Orbitron&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<title>The Verge Scraper</title>
@@ -9,17 +11,23 @@
 
 <body>
 	<header>
-		<a href="/"><div id="sitename">The Verge Scraper</div></a>
+		<div id="sitename" class="nav justify-content-center">The Verge Scraper</div>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
 		<a href="/"><button id="all-articles">All Articles</button></a>
+  </li>
+  <li class="nav-item">
 		<a href="/saved"><button id="saved-articles">Saved Articles</button></a>
-		<form action="/scrape" method="GET">
-			<button type="submit" id="refresh-articles">Scrape For Newest Articles</button>
-		</form>
+					<button type="submit" id="refresh-articles">Scrape For Newest Articles</button>
+  </li>
+</ul>
+<br><br>
 		<form action="/search" method="POST">
 			<button type="submit" id="search-submit">Submit</button>
 			<input type="text" name="search" placeholder="Search for articles" id="search-input">
 		</form>
 	</header>
+	<br><br>
 	{{!-- <img id="cover" src="/assets/images/cover.jpg" height="500px"> --}}
 	<div id="container">
 		{{{ body }}}
@@ -42,7 +50,6 @@
 		</div>
 	</div>
 	
-	<footer>© Copyright Pamela Tholan</footer>
 	<script src="/assets/javascript/app.js"></script>
 </body>
 </html>
