@@ -112,28 +112,28 @@ app.get("/scrape", function(req, res) {
 // 	    console.log(results);
 // 	  });
 	  
-// app.get("/scrape", function(req, res) {
-// 	request("https://www.theverge.com/tech", function(error, response, html) {
-// 		var $ = cheerio.load(html);
-// 		var result = [];
-// 		$("div.story-body").each(function(i, element) {
-// 			var title = $(element).text();
-// 			var link = $(element).find("a").attr("href");
-// 			result.link = link;
-// 			result.title = title;
-// 			var entry = new Article(result);
-// 			Article.find({title: result.title}, function(err, data) {
-// 				if (data.length === 0) {
-// 					entry.save(function(err, data) {
-// 						if (err) throw err;
-// 					});
-// 				}
-// 			});
-// 		});
-// 		console.log("Scrape finished.");
-// 		res.redirect("/");
-// 	});
-// });
+app.get("/scrape", function(req, res) {
+	request("https://www.theverge.com/tech", function(error, response, html) {
+		var $ = cheerio.load(html);
+		var result = [];
+		$("div.story-body").each(function(i, element) {
+			var title = $(element).text();
+			var link = $(element).find("a").attr("href");
+			result.link = link;
+			result.title = title;
+			var entry = new Article(result);
+			Article.find({title: result.title}, function(err, data) {
+				if (data.length === 0) {
+					entry.save(function(err, data) {
+						if (err) throw err;
+					});
+				}
+			});
+		});
+		console.log("Scrape finished.");
+		res.redirect("/");
+	});
+});
 
 app.get("/saved", function(req, res) {
 	Article.find({issaved: true}, null, {sort: {created: -1}}, function(err, data) {
