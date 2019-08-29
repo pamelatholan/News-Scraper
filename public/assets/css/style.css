@@ -1,38 +1,35 @@
 #sitename {
-    /* font-family: 'Orbitron', sans-serif; */
-    font-size: 75px;
-    color: white;
-    /* font-family: 'Lacquer', sans-serif; */
-    /* font-family: 'Fredericka the Great', cursive; */
-    /* font-family: 'Kelly Slab', cursive; */
-    /* font-family: 'Federo', sans-serif; */
-    font-family: 'Frijole', cursive;
+  font-size: 75px;
+  color: white;
+  font-family: "Frijole", cursive;
 }
 
-a{
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    font-size: 25px;
+a {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  font-size: 25px;
 }
 
 button {
-    background-color: black;
-    color: yellow;
-    font-family: 'Federo', sans-serif;
-    font-size: 20px;
+  background-color: black;
+  color: yellow;
+  font-family: "Federo", sans-serif;
+  font-size: 20px;
 }
 
 body {
-    margin-left: 10px;
-    background-image: url("/assets/images/smoke.jpg");
-    background-size: cover;
+  margin-left: 10px;
+  background-image: url("/assets/images/smoke.jpg");
+  background-size: cover;
 }
 
-h2, h3, label {
-    color: white;
-    font-family: 'Federo', sans-serif;
+h2,
+h3,
+label {
+  color: white;
+  font-family: "Federo", sans-serif;
 }
 
 label {
-    font-size: 20px;
+  font-size: 20px;
 }
