@@ -8,8 +8,8 @@ var cheerio = require("cheerio");
 // var request = require("request");
 var axios = require("axios");
 
-var Note = require("./models/Note");
-var Article = require("./models/Article");
+var Note = require("./models/note");
+var Article = require("./models/article");
 var databaseUrl = 'mongodb://localhost/mongoHeadlines';
 
 if (process.env.MONGODB_URI) {
