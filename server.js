@@ -5,7 +5,7 @@ var exphbs = require("express-handlebars");
 var mongoose = require("mongoose");
 var logger = require("morgan");
 var cheerio = require("cheerio");
-var request = require("request");
+// var request = require("request");
 var axios = require("axios");
 
 var Note = require("./models/Note");
