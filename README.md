@@ -1,6 +1,7 @@
 # News-Scraper
 All the News That's Fit to Scrape 
-Scraped site: [The Verge: Tech](https://www.theverge.com/tech)
+
+* Scraped site: [The Verge: Tech](https://www.theverge.com/tech)
 
 * Web scraper built using:
     * Javascript
